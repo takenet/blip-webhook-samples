@@ -1,0 +1,8 @@
+{
+  "identifier": "{YOUR_IDENTIFIER}",
+  "accessKey": "{YOUR_AUTHORIZATION_KEY}",
+  "settings": {
+    "key1": "value1"
+  },
+  "schemaVersion": 2
+}
