@@ -11,6 +11,6 @@
   "dependencies": {
     "request": "^2.74.0",
     "request-promise": "^4.1.1",
-    "uuid": "^2.0.2"
+    "lime-js": "2.5.2"
   }
 }

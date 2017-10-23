@@ -1,5 +1,6 @@
 'use strict';
 
+let Lime = require('lime-js');
 let request = require('request-promise');
 let BlipHttpClient = require('./BlipHttpClient');
 
@@ -15,7 +16,7 @@ class HelloWorldBot {
         let text = message.content.toString();
     
         // Loga mensagem recebida
-        console.log(`<< ${m.from}: ${m.content}`)
+        console.log(`<< ${message.from}: ${message.content}`)
     
         // Cria uma nova mensagem para responder o usuario que enviou a mensagem.
         // O campo `to` da messagem deve ser igual ao campo `from` da mensagem recebida
@@ -27,7 +28,7 @@ class HelloWorldBot {
         };
     
         // Responde a mensagem para o usuario
-        return client.sendMessage(response);
+        return this._client.sendMessage(response);
     }
 }
 
